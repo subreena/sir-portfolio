@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;}
+body{
+    background-color: #f5f8fc;
+}
+
+.appMain {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    flex: 1 1 0;
+    width: 350px;
+    position: fixed;
+    top: 0;
+    left: -350px;
+    padding: 2rem 1rem;
+    background: #2e3047;
+    height: 100%;
+    transition: left 0.3s ease-in-out;
+    z-index: 1001;
+}
+
+.sidebar h3 {
+    color: #707693;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background: #2e3047;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom:1em;
+    padding-bottom: 1.5em;
+    text-align: center;
+    margin-top: 0.5em;
+    border-bottom: 1px solid #3bba9c;
+}
+
+.sidebar .menu {
+    margin: 0 -1rem;
+    background: #2e3047;
+}
+
+.sidebar .menu .menu-item {
+    display: block;
+    padding: 1em;
+    color: #FFF;
+    background: #2e3047;
+    text-decoration: none;
+    transition: 0.2s linear;
+}
+
+
+.sidebar .menu .menu-item:hover,
+.sidebar .menu .menu-item.is-active {
+    color: #3bba9c;
+    border-right: 5px solid #3bba9c;
+}
+
+.contentMain {
+    flex: 1 1 0;
+    transition: filter 0.3s ease-in-out;
+}
+
+.menu-toggle {
+    display: block;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 99px;
+    background-color: #2e3047;
+    cursor: pointer;
+    z-index: 1002;
+}
+
+.hamburger {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+}
+
+.hamburger > span,
+.hamburger > span::before,
+.hamburger > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 99px;
+    background-color: #FFF;
+    transition-duration: .25s;
+}
+
+.hamburger > span::before {
+    content: '';
+    top: -8px;
+}
+
+.hamburger > span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu-toggle.is-active .hamburger > span {
+    transform: rotate(45deg);
+}
+
+.menu-toggle.is-active .hamburger > span::before {
+    transform: rotate(0deg);
+    top: 0;
+}
+
+.menu-toggle.is-active .hamburger > span::after {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+
+.sidebar.is-active {
+    left: 0;
+}
+
+.contentMain.blurred {
+    opacity: 0.1;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* maintitle  */
+.main-title {
+    padding: 30px 20px 0;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.main-title-title {
+    text-align: center;
+    font-weight: 900;
+    font-size: 3.5em;
+    color: #2e3047;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.blue-txt{
+    color: #2e3047;
+}
+
+.green-text{
+    color: #3bba9c;
+}
+/* header  */
+.header-icon-a {
+    display: inline-block;
+    margin: 5px;
+    color: #818080;
+    transition: .2s linear;
+}
+
+.header-icon-a:hover {
+    color: #3bba9c;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/*intro  */
+
+.intro-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    padding: 50px 10px ;
+    margin: 10px 0 50px 0;
+    border-radius: 10px;
+    background-color: #fafafa;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+
+}
+
+.intro-img{
+    text-align: center;
+    padding: 20px;
+}
+
+.intro-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.intro-details p{
+    font-weight: 700;
+    
+}
+.intro-details ul{
+    color: #3bba9c;
+    font-weight: 500;
+}
+
+.intro-title, .skill-title,.exp-header, .rp-title, .prof-title, .contact-title, .tm-title{
+    text-align: left;
+    font-weight: 700;
+    color: #2e3047;
+    text-transform: uppercase;
+}
+
+.contact-text-txt{
+    font-size: 1.2em;
+}

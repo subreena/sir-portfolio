@@ -1,0 +1,101 @@
+@media (max-width: 1024px) {
+    .edu-table tr td{
+        font-size: 16px;
+    }
+    .rp-sub-sec-text{
+        font-size: 16px;
+    }
+    .rpNav-item{
+        flex-direction: column;
+        font-size: 16px;
+        flex-wrap: wrap;
+      
+    }
+    .main-title-title{
+        font-size: 2.5em;
+    }
+    .prof-title{
+        font-size: 1.2em;
+    }
+   
+}
+
+@media (max-width: 768px) {
+    .edu-table tr td{
+        font-size: 15px;
+    }
+    .rp-sub-sec-text{
+        font-size: 15px;
+    }
+    .rpNav-item{
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 13px;
+ 
+   
+    }
+    .main-title-title{
+        font-size: 2em;
+    }
+    .timeline-item{
+        padding-right: 10px;
+    }
+    .honour-list{
+        list-style: none;
+        padding-left: 10px; 
+       
+    }
+    .prof-list{
+        padding-left: 20px; 
+        text-align: justify;
+        font-size: 15px;
+    }
+    
+    .honour-list li{
+         /* Adjust padding to make space for the icon */
+        background-size: 15px 15px; /* Adjust size of the icon */
+    font-size: 15px;
+    text-align: justify;
+    }
+
+}
+@media (max-width: 500px){
+    .rpNav{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .main-title-title{
+        font-size: 1.5em;
+    }
+    .rpNav-item{
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 13px;
+    }
+    .skill-list li{
+        margin: 10px 15px;
+        font-size: 12px;
+    }
+}
+@media (max-width: 1024px) {
+    .sidebar {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        height: 50px;
+        width: 50px;
+        top: 10;
+        right: 10;
+    }
+
+  
+    .sidebar {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
